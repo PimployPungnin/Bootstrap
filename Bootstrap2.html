@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Bootstrap2</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">สำนักงานคอมพิวเตอร์ฯ</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">หน้าแรก</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">หน้าสอง</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">การจัดการข้อมูล</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main class="mb-5">
+        <!--breadcrumb-->
+        <section class="container">
+            <ol class="breadcrumb mt-4">
+                <li class="breadcrumb-item"><a href="#">หน้าแรก</a></li>
+                <li class="breadcrumb-item">การจัดการข้อมูล</li>
+            </ol>
+        </section>
+
+        <!--table management-->
+        <section class="container">
+            <!--alert-->
+            <div class="alert alert-success">
+                <span class="fw-bold fs-5">สำเร็จ!</span>
+                ข้อมูลได้รับการบันทึกเรียบร้อยแล้ว
+            </div>
+        <!--bottom group-->
+        <h1 class="-lg-start mb-4">การจัดการบุคลากร</h1>
+        <div class="row">
+            <!--<div class="col-lg-5 text-lg-start mb-3">
+                <button class="btn btn-success">อนุมัติ</button>
+                <button class="btn btn-danger">ไม่อนุมัติ</button>
+                <div class="btn-group">
+                    <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Action</button>   
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">เรียกดู</a></li>
+                        <li><a href="#" class="dropdown-item">แก้ไข</a></li>
+                        <li><a href="#" class="dropdown-item">ลบ</a></li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="col-lg-4 offset-lg-3">
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="bi bi-search"></i></span>
+                    <input type="text" class="from-control" placeholder="ค้นหา...">
+                </div>
+                </div>-->
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--table-->
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <caption>จำนวนบุลคลากรทั้งหมด 500 คน</caption>
+                            <thead class="table-seconary">
+                                <tr>
+                                    <th>#</th>
+                                    <th>รูปประจำตัว</th>
+                                    <th>ชื่อ</th>
+                                    <th>นามสกุล</th>
+                                    <th>อีเมล์</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="text-center">
+                                        <input type="checkbox">
+                                    </th>
+                                    <td class="text-center"><img src="#"></td>
+                                    <td>Pimploy</td>
+                                    <td>Pungnin</td>
+                                    <td>tangmo00pp@gmail.com</td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-info"><i class="bi bi-eye"></i> เรียกดู</button>
+                                            <button type="button" class="btn btn-success"><i class="bi bi-pencil"></i> แก้ไข</button>
+                                            <button type="button" class="btn btn-danger"><i class="bi bi-trash"></i> ลบ</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+      </main>
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>  
+</body>
+</html>
